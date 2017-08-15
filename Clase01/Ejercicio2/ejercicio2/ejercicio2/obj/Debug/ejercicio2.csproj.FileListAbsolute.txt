@@ -1,0 +1,6 @@
+D:\marina\Ejercicio2\ejercicio2\ejercicio2\bin\Debug\ejercicio2.exe.config
+D:\marina\Ejercicio2\ejercicio2\ejercicio2\bin\Debug\ejercicio2.exe
+D:\marina\Ejercicio2\ejercicio2\ejercicio2\bin\Debug\ejercicio2.pdb
+D:\marina\Ejercicio2\ejercicio2\ejercicio2\obj\Debug\ejercicio2.csprojResolveAssemblyReference.cache
+D:\marina\Ejercicio2\ejercicio2\ejercicio2\obj\Debug\ejercicio2.exe
+D:\marina\Ejercicio2\ejercicio2\ejercicio2\obj\Debug\ejercicio2.pdb
