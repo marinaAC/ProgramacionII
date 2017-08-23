@@ -1,0 +1,6 @@
+D:\marina\ProgramacionII\Clase02\Ejercicio12\Ejercicio12\Ejercicio12\bin\Debug\Ejercicio12.exe.config
+D:\marina\ProgramacionII\Clase02\Ejercicio12\Ejercicio12\Ejercicio12\bin\Debug\Ejercicio12.exe
+D:\marina\ProgramacionII\Clase02\Ejercicio12\Ejercicio12\Ejercicio12\bin\Debug\Ejercicio12.pdb
+D:\marina\ProgramacionII\Clase02\Ejercicio12\Ejercicio12\Ejercicio12\obj\Debug\Ejercicio12.csprojResolveAssemblyReference.cache
+D:\marina\ProgramacionII\Clase02\Ejercicio12\Ejercicio12\Ejercicio12\obj\Debug\Ejercicio12.exe
+D:\marina\ProgramacionII\Clase02\Ejercicio12\Ejercicio12\Ejercicio12\obj\Debug\Ejercicio12.pdb
