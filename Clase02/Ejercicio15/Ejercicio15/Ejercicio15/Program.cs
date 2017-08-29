@@ -17,16 +17,17 @@ namespace Ejercicio15
             string mensajeIngreso = "Ingrese el numero con el que desea operar: ";
             string operadorString = "Ingrese el operador que desea utilizar: ";
 
-            Consulta(numeroIngresadoUno, mensajeIngreso);
-            Consulta(numeroIngresadoDos,mensajeIngreso);
-            Consulta(operaciones, operadorString);
+            numeroIngresadoUno = Consulta(mensajeIngreso);
+            numeroIngresadoDos = Consulta( mensajeIngreso);
+            operaciones = Consulta(operadorString);
             respuesta = Calculadora.Calcular(numeroIngresadoUno, numeroIngresadoDos, operaciones);
             Calculadora.Mostrar(respuesta);
 
             
         }
 
-        static string Consulta(string var, string men) {
+        static string Consulta(string men) {
+            string var;
             Console.WriteLine(men);
             var = Console.ReadLine();
             return var;

@@ -12,18 +12,19 @@ namespace Ejercicio15
         {
             float numeroPareado1, numeroPareado2;
             float rta = 0;
-            numeroPareado1 = int.Parse(num1);
-            numeroPareado2 = int.Parse(num2);
-            Calculadora.parseOperador(numeroPareado1,numeroPareado2,rta,operador);
+            numeroPareado1 = float.Parse(num1);
+            numeroPareado2 = float.Parse(num2);
+            rta = Calculadora.parseOperador(numeroPareado1,numeroPareado2,rta,operador);
             return rta;
         }
 
-        private static void parseOperador(float num1, float num2, float rta, string operador)
+        private static float parseOperador(float num1, float num2, float rta, string operador)
         {
-            
+            rta = 0;
             switch(operador){
                 case "+":
                     rta = num1 + num2;
+                    
                     break;
                 case "-":
                     rta = num1 - num2;
@@ -44,6 +45,8 @@ namespace Ejercicio15
                     break;
             }
 
+            return rta;
+
         }
 
         private static Boolean Validar(float num2)
@@ -56,7 +59,7 @@ namespace Ejercicio15
             return retorno;
         }
 
-        public static void Mostrar(int respuesta) {
+        public static void Mostrar(float respuesta) {
             Console.WriteLine("El resultado es: {0:N}", respuesta);
             Console.ReadLine();
         }
