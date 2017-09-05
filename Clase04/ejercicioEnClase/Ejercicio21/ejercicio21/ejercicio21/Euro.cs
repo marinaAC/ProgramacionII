@@ -16,7 +16,7 @@ namespace ejercicio21
 
         public static Euro operator + (Euro euro, Dolar dolar){
             Euro aux;
-            
+            aux = euro + dolar * 1.3642;
             return aux;
         }
 
