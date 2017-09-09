@@ -8,14 +8,28 @@ namespace ejercicio21
 {
     class Euro
     {
-        private int _cantidad;
+        public double cantidad;
 
-        private Euro(int cantidad) {
-            this._cantidad = cantidad;
+        private Euro(double cantidad) {
+            this.cantidad = cantidad;
         }
+
+        public static explicit operator Euro(double cant)
+        {
+            Euro retValue = new Euro(cant);
+            return retValue;
+        }
+
+        public static explicit operator double(Euro e)
+        {
+            return e.cantidad;
+        }
+
 
         public static Euro operator + (Euro euro, Dolar dolar){
             Euro aux;
+
+            aux = (Euro)(((double)dolar / 1.3642) + (double)euro);
             
             return aux;
         }
