@@ -28,9 +28,13 @@ namespace ejercicio21
 
         public static Euro operator + (Euro euro, Dolar dolar){
             Euro aux;
+<<<<<<< HEAD
 
             aux = (Euro)(((double)dolar / 1.3642) + (double)euro);
             
+=======
+            aux = euro + dolar * 1.3642;
+>>>>>>> 45daa0215986491edaba3da01509fdee013061e3
             return aux;
         }
 
