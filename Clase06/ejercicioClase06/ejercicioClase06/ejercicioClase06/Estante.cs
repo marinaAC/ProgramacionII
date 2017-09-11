@@ -43,7 +43,9 @@ namespace ejercicioClase06
                 if(!object.ReferenceEquals(e._productos[i],null)){
                     result[i] = Producto.MostrarProducto(e._productos[i]);
                 }
+
             }
+
 
             return ubicacion;
         }
@@ -101,5 +103,7 @@ namespace ejercicioClase06
             }
             return returnAux;
         }
+
+
     }
 }

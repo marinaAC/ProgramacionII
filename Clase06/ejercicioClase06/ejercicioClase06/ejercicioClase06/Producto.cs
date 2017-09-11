@@ -71,7 +71,7 @@ namespace ejercicioClase06
             string marca = p.GetMarca();
             string codigoBarras = p.codigoDeBarra;
             string precio = p.GetPrecio().ToString();
-            result = string.Format("{0} {1} {2}", marca, precio, codigoBarras);
+            result = string.Format("{0}, {1}, {2}", marca, precio, codigoBarras);
             return result;
         }
 

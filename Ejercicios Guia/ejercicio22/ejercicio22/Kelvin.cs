@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ejercicioClase06
-{/*
-    class Program
+namespace ejercicio22
+{
+    class Kelvin
     {
-        static void Main(string[] args)
-        {
-        }
-    }*/
+    }
 }
