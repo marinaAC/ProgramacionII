@@ -12,9 +12,11 @@ namespace Calculadora
 {
     public partial class formCaluladora : Form
     {
+        
         public formCaluladora()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,6 +35,17 @@ namespace Calculadora
         }
 
         private void cmbOperacion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNumero1_TextChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void txtNumero2_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -63,7 +63,7 @@ namespace ejercicioClase06
             bool returnAux = false;
             for (i = 0; i < e._productos.Length;i++ )
             {
-                if(e._productos[i]==p){
+                if(!object.ReferenceEquals(e._productos[i], null)&&e._productos[i]==p){
                     returnAux = true;
                 }
             }
@@ -94,7 +94,7 @@ namespace ejercicioClase06
 
             for (i = 0; i < e._productos.Length; i++ )
             {
-                if (!object.ReferenceEquals(e._productos[i], null)&& e!=p)
+                if (object.ReferenceEquals(e._productos[i], null)&& e!=p)
                 {
                        e._productos[i] = p;
                        returnAux = true;

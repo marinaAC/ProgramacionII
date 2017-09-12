@@ -50,6 +50,7 @@
             this.txtNumero1.Name = "txtNumero1";
             this.txtNumero1.Size = new System.Drawing.Size(63, 20);
             this.txtNumero1.TabIndex = 1;
+            this.txtNumero1.TextChanged += new System.EventHandler(this.txtNumero1_TextChanged);
             // 
             // cmbOperacion
             // 
@@ -72,6 +73,7 @@
             this.txtNumero2.Name = "txtNumero2";
             this.txtNumero2.Size = new System.Drawing.Size(63, 20);
             this.txtNumero2.TabIndex = 3;
+            this.txtNumero2.TextChanged += new System.EventHandler(this.txtNumero2_TextChanged);
             // 
             // btnLimpiar
             // 

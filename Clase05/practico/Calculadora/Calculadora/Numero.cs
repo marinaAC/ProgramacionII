@@ -39,7 +39,7 @@ namespace Calculadora
         /// </summary>
         /// <param name="num"></param>
         public Numero(string num) {
-            this.numero = double.Parse(num);
+            this.numero = validarNumero(num);
         }
 
         /// <summary>
