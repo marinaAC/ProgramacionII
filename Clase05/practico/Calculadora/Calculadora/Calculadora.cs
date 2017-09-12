@@ -9,11 +9,13 @@ namespace Calculadora
     class Calculadora
     {
         
-        public double Operar(Numero numero1, Numero numero2, string operador) {
+        public double Operar(Numero numero1, Numero numero2, string operador) 
+        {
 
             double returnAux=0;
 
-            switch(ValidarOperador(operador)){
+            switch(ValidarOperador(operador))
+            {
                 case "+":
                     returnAux = numero1.getNumero() + numero2.getNumero();
                     break;
@@ -24,9 +26,13 @@ namespace Calculadora
                     returnAux = numero1.getNumero() * numero2.getNumero();
                     break;
                 case "/":
-                    if (numero2.getNumero()>0)
+                    if (numero2.getNumero() > 0)
                     {
                         returnAux = numero1.getNumero() / numero2.getNumero();
+                    }
+                    else 
+                    {
+                        returnAux = 0;
                     }
                     break;
             }
@@ -34,9 +40,11 @@ namespace Calculadora
             return returnAux;
         }
 
-        private string ValidarOperador(string operador) {
+        private string ValidarOperador(string operador) 
+        {
             
-            if(operador!="+" || operador!= "-"|| operador!="/" || operador!="*"){
+            if(operador != "+" && operador != "-"  && operador != "/" && operador != "*")
+            {
                 operador = "+";
             }
 
