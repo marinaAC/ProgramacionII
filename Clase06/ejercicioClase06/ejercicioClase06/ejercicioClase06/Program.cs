@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ejercicioClase06
-{/*
+{
     class Program
     {
         static void Main(string[] args)
         {
         }
-    }*/
+    }
 }

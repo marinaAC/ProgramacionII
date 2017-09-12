@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ejercicioClase06
+namespace ejercicioClase06WF
 {
     class Estante
     {
         private Producto[] _productos;
         private int _ubicacionEstante;
 
-        private Estante(int capacidad){
+        private Estante(int capacidad)
+        {
             this._productos = new Producto[capacidad];
         }
 
@@ -23,30 +24,34 @@ namespace ejercicioClase06
         /// </summary>
         /// <param name="capacidad"></param>
         /// <param name="ubicacion"></param>
-        public Estante(int capacidad, int ubicacion):this(capacidad){
+        public Estante(int capacidad, int ubicacion): this(capacidad)
+        {
             this._ubicacionEstante = ubicacion;
         }
 
-        
-        public Producto[] GetProductos(){
+
+        public Producto[] GetProductos()
+        {
             return this._productos;
         }
 
 
         //object.ReferenceEquals para comparar un objeto con otro objeto
-        public static string MostrarEstante(Estante e){
+        public static string MostrarEstante(Estante e)
+        {
             int i;
             string[] result = new String[e._productos.Length];
-            string resultAux="";
+            string resultAux = "";
             string ubicacion = e._ubicacionEstante.ToString();
-            for (i = 0; i < e._productos.Length;i++ )
+            for (i = 0; i < e._productos.Length; i++)
             {
-                if(!object.ReferenceEquals(e._productos[i],null)){
+                if (!object.ReferenceEquals(e._productos[i], null))
+                {
                     result[i] = Producto.MostrarProducto(e._productos[i]);
                 }
                 resultAux = String.Concat(result[i]);
             }
-            
+
 
 
             return resultAux;
@@ -60,12 +65,14 @@ namespace ejercicioClase06
         /// <param name="e">Estante</param>
         /// <param name="p"></param>
         /// <returns></returns>
-        public static bool operator ==(Estante e,Producto p){
+        public static bool operator ==(Estante e, Producto p)
+        {
             int i;
             bool returnAux = false;
-            for (i = 0; i < e._productos.Length;i++ )
+            for (i = 0; i < e._productos.Length; i++)
             {
-                if(!object.ReferenceEquals(e._productos[i], null)&&e._productos[i]==p){
+                if (!object.ReferenceEquals(e._productos[i], null) && e._productos[i] == p)
+                {
                     returnAux = true;
                 }
             }
@@ -73,9 +80,11 @@ namespace ejercicioClase06
             return returnAux;
         }
 
-        public static bool operator !=(Estante e, Producto p){
+        public static bool operator !=(Estante e, Producto p)
+        {
             bool returnAux = true;
-            if(e==p){
+            if (e == p)
+            {
                 returnAux = false;
             }
             return returnAux;
@@ -94,13 +103,13 @@ namespace ejercicioClase06
             bool returnAux = false;
             int i;
 
-            for (i = 0; i < e._productos.Length; i++ )
+            for (i = 0; i < e._productos.Length; i++)
             {
-                if (object.ReferenceEquals(e._productos[i], null)&& e!=p)
+                if (object.ReferenceEquals(e._productos[i], null) && e != p)
                 {
-                       e._productos[i] = p;
-                       returnAux = true;
-                       break;
+                    e._productos[i] = p;
+                    returnAux = true;
+                    break;
                 }
             }
             return returnAux;

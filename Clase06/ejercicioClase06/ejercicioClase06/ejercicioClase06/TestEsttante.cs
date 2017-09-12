@@ -63,14 +63,15 @@ namespace ejercicioClase06
             { 
                 Console.WriteLine("¡NO agregó {0} {1} {2}!", p4.GetMarca(), (string)p4, p4.GetPrecio()); 
             }
-            /*
+            
             // Muestro todo el estante 
             Console.WriteLine(); 
             Console.WriteLine("<------------------------------------------------->"); 
             Console.WriteLine(Estante.MostrarEstante(estante));
             Console.ReadKey();
 
-            */
+            
+            /*
             Producto p11 = new Producto("Pepsi", "PESDS97413", (float)10.5);
             Producto p22 = new Producto("Coca-Cola", "COSDS55752", (float)10.5); 
             List<Producto> listaProd = new List<Producto>();
@@ -86,7 +87,7 @@ namespace ejercicioClase06
             Dictionary<int, Producto> dProducto = new Dictionary<int, Producto>();
             dProducto.Add(0,p11);
             dProducto.Add(1, p22);
-
+            */
         }
     }
 }
