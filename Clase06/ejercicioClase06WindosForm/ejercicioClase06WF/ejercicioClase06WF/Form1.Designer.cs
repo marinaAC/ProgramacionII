@@ -79,6 +79,7 @@
             this.listProd.Name = "listProd";
             this.listProd.Size = new System.Drawing.Size(120, 95);
             this.listProd.TabIndex = 4;
+            this.listProd.SelectedIndexChanged += new System.EventHandler(this.listProd_SelectedIndexChanged);
             // 
             // btnAgregar
             // 

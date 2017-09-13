@@ -15,6 +15,7 @@ namespace ejercicioClase06WF
         public formPpal()
         {
             InitializeComponent();
+            
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -28,6 +29,11 @@ namespace ejercicioClase06WF
         {
             formProducto prod = new formProducto();
             prod.ShowDialog();
+        }
+
+        private void listProd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

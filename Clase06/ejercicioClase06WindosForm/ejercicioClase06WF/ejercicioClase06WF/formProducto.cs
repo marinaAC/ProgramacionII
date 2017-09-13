@@ -29,7 +29,8 @@ namespace ejercicioClase06WF
             precio = txtProductoPrecio.Text;
             precAux = float.Parse(precio);
             Producto prod = new Producto(marca,barras,precAux);
-
+            
+            
 
         }
     }
