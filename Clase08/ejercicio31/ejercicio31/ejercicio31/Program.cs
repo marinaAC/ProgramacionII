@@ -11,6 +11,7 @@ namespace ejercicio31
         static void Main(string[] args)
         {
             Negocio neg1 = new Negocio("Disco");
+            Cliente cli1 = new Cliente(1, "Clientee1");
             
 
         }

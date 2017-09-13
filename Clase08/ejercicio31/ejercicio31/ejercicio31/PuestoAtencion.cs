@@ -19,7 +19,7 @@ namespace ejercicio31
             this._numeroActual = 0;
         }
 
-        public PuestoAtencion(Puesto puesto) 
+        public PuestoAtencion(Puesto puesto):this() 
         {
             this._puesto = puesto;
         }
