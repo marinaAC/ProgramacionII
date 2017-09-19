@@ -54,7 +54,11 @@ namespace LibreriaClases
 
         public double MostrarTotalFacturado(EVehiculo v) 
         {
-            
+            foreach (Vehiculo element in this._vehiculos) 
+            {
+                if(element is Auto && v == EVehiculo.Auto)
+                {}
+            }
         }
 	
     }
