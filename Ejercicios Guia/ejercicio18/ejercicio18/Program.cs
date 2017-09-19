@@ -14,6 +14,7 @@ namespace ejercicio18
 
             Computadora pc2 = new Computadora(true, 10, EMarca.Samsung, EProcesador.ADM_Phenom_II);
 
+            
             pc1.Encender();
             pc2.Apagar();
 

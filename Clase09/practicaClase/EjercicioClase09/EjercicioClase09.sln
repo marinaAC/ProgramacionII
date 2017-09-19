@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioClase09", "EjercicioClase09\EjercicioClase09.csproj", "{DA205584-6CCE-4048-9C75-343D5DC3A6E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaClases", "LibreriaClases\LibreriaClases.csproj", "{86678964-BEB1-4CD1-91E1-45848E1642C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA205584-6CCE-4048-9C75-343D5DC3A6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA205584-6CCE-4048-9C75-343D5DC3A6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA205584-6CCE-4048-9C75-343D5DC3A6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA205584-6CCE-4048-9C75-343D5DC3A6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86678964-BEB1-4CD1-91E1-45848E1642C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86678964-BEB1-4CD1-91E1-45848E1642C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86678964-BEB1-4CD1-91E1-45848E1642C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86678964-BEB1-4CD1-91E1-45848E1642C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
