@@ -27,8 +27,13 @@ namespace ejercicioClase06WF
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            formProducto prod = new formProducto();
-            prod.ShowDialog();
+            Producto producto = new Producto();
+            formProducto prod = new formProducto(producto);
+            if(prod.ShowDialog()==System.Windows.Forms.DialogResult.OK)
+            {
+                listProd.Text = producto.GetMarca();
+            }
+            this.Hide();
         }
 
         private void listProd_SelectedIndexChanged(object sender, EventArgs e)

@@ -12,6 +12,14 @@ namespace ejercicioClase06WF
         protected string marca;
         protected float precio;
 
+
+        public Producto()
+        {
+            this.codigoDeBarra = "";
+            this.marca = "";
+            this.precio = 0;
+        }
+
         public Producto(string marca, string codigo, float precio)
         {
             this.codigoDeBarra = codigo;
@@ -19,10 +27,6 @@ namespace ejercicioClase06WF
             this.precio = precio;
         }
 
-        public Producto()
-        {
-            // TODO: Complete member initialization
-        }
 
         public string GetMarca()
         {

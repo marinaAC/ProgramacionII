@@ -54,11 +54,66 @@ namespace LibreriaClases
 
         public double MostrarTotalFacturado(EVehiculo v) 
         {
+            double resultAux = 0; ;
             foreach (Vehiculo element in this._vehiculos) 
             {
+
                 if(element is Auto && v == EVehiculo.Auto)
-                {}
+                {
+                    resultAux += this._precioAuto;
+                }
+                if(element is Camion && v == EVehiculo.Camion)
+                {
+                    resultAux += this._precioCamion;
+                }
+                if (element is Moto && v == EVehiculo.Moto) 
+                {
+                    resultAux += this._precioMoto;
+                }
             }
+            return resultAux;
+        }
+
+        public static bool operator ==(Lavadero l, Vehiculo v)
+        {
+            bool resultAux = false;
+            foreach(Vehiculo element in l._vehiculos)
+            {
+                if(element == v)
+                {
+                    resultAux = true;
+                }
+            }
+            return resultAux;
+        }
+
+        public static bool operator +(Lavadero l, Vehiculo v)
+        {
+            bool resultAux = false;
+            if(!(l==v))
+            {
+                l._vehiculos.Add(v);
+                resultAux = true;
+            }
+            return resultAux;
+        }
+
+        public static bool operator -(Lavadero l, Vehiculo v)
+        {
+            bool resultAux = false;
+            if(l==v)
+            {
+                l._vehiculos.Remove(v);
+                resultAux = true;
+            }
+            return resultAux;
+        }
+
+
+        /// Preguntar como puedo acceder a los atributos protegidos de los vehiculos
+        public static int OrdenarVehiculosPorPatente(Vehiculo v1, Vehiculo v2) 
+        {
+            
         }
 	
     }

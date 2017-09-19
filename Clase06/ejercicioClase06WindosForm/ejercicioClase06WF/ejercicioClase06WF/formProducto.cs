@@ -16,9 +16,10 @@ namespace ejercicioClase06WF
         static string barras;
         static string precio;
 
-        public formProducto()
+        public formProducto(Producto prod)
         {
             InitializeComponent();
+            
         }
 
         private void btnAceptarProd_Click(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace ejercicioClase06WF
             barras = txtProductoBarras.Text;
             precio = txtProductoPrecio.Text;
             precAux = float.Parse(precio);
-            Producto prod = new Producto(marca,barras,precAux);
+            
             
             
 

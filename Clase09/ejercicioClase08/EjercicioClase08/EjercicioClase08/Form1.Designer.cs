@@ -37,6 +37,10 @@
             this.btnLimpiarForm = new System.Windows.Forms.Button();
             this.btnAgregarItem = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.cmbPuesto = new System.Windows.Forms.ComboBox();
+            this.mtxSalario = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtLegajo = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -92,6 +96,7 @@
             this.btnEmpresa.TabIndex = 5;
             this.btnEmpresa.Text = "Empresa";
             this.btnEmpresa.UseVisualStyleBackColor = true;
+            this.btnEmpresa.Click += new System.EventHandler(this.btnEmpresa_Click);
             // 
             // btnLimpiarForm
             // 
@@ -101,6 +106,7 @@
             this.btnLimpiarForm.TabIndex = 6;
             this.btnLimpiarForm.Text = "Limpiar";
             this.btnLimpiarForm.UseVisualStyleBackColor = true;
+            this.btnLimpiarForm.Click += new System.EventHandler(this.btnLimpiarForm_Click);
             // 
             // btnAgregarItem
             // 
@@ -110,6 +116,7 @@
             this.btnAgregarItem.TabIndex = 7;
             this.btnAgregarItem.Text = "Agregar";
             this.btnAgregarItem.UseVisualStyleBackColor = true;
+            this.btnAgregarItem.Click += new System.EventHandler(this.btnAgregarItem_Click);
             // 
             // txtNombre
             // 
@@ -118,11 +125,46 @@
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 8;
             // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(106, 45);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 9;
+            // 
+            // cmbPuesto
+            // 
+            this.cmbPuesto.FormattingEnabled = true;
+            this.cmbPuesto.Location = new System.Drawing.Point(106, 99);
+            this.cmbPuesto.Name = "cmbPuesto";
+            this.cmbPuesto.Size = new System.Drawing.Size(121, 21);
+            this.cmbPuesto.TabIndex = 11;
+            // 
+            // mtxSalario
+            // 
+            this.mtxSalario.Location = new System.Drawing.Point(106, 130);
+            this.mtxSalario.Name = "mtxSalario";
+            this.mtxSalario.Size = new System.Drawing.Size(100, 20);
+            this.mtxSalario.TabIndex = 12;
+            this.mtxSalario.Text = "$___,_";
+            // 
+            // mtxtLegajo
+            // 
+            this.mtxtLegajo.Location = new System.Drawing.Point(106, 72);
+            this.mtxtLegajo.Name = "mtxtLegajo";
+            this.mtxtLegajo.Size = new System.Drawing.Size(100, 20);
+            this.mtxtLegajo.TabIndex = 13;
+            this.mtxtLegajo.Text = "__.______._";
+            // 
             // FormClase08
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 273);
+            this.Controls.Add(this.mtxtLegajo);
+            this.Controls.Add(this.mtxSalario);
+            this.Controls.Add(this.cmbPuesto);
+            this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnAgregarItem);
             this.Controls.Add(this.btnLimpiarForm);
@@ -134,6 +176,7 @@
             this.Controls.Add(this.lblNombre);
             this.Name = "FormClase08";
             this.Text = "Clase08";
+            this.Load += new System.EventHandler(this.FormClase08_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +193,10 @@
         private System.Windows.Forms.Button btnLimpiarForm;
         private System.Windows.Forms.Button btnAgregarItem;
         private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.ComboBox cmbPuesto;
+        private System.Windows.Forms.MaskedTextBox mtxSalario;
+        private System.Windows.Forms.MaskedTextBox mtxtLegajo;
     }
 }
 
