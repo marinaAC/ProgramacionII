@@ -14,21 +14,45 @@ namespace ClassLibrary
         protected DirectorTecnico dt;
         protected List<Jugador> jugadores;
         protected string nombre;
-        protected Deportes deportes;
+        protected Deportes deporte;
 
         public Deportes Deporte
         {
             set 
             { 
-                deportes = value; 
+                deporte = value; 
             }
         }
 
+        
         public static Equipo() 
         {
+            Equipo equ = new Equipo();
+            equ.deporte = Deportes.Futbol;
             
         }
-        
+         
+        private Equipo() 
+        {
+            this.jugadores = new List<Jugador>();
+        }
+
+        public Equipo(string nombre, DirectorTecnico dt):this() 
+        {
+            this.dt = dt;
+            this.nombre = nombre;
+        }
+
+        public Equipo(string nombre, DirectorTecnico dt, Deportes dep)
+            : this()
+        {
+            this.dt = dt;
+            this.nombre = nombre;
+            this.deporte = dep;
+        }
+
+
+
 
 
     }
