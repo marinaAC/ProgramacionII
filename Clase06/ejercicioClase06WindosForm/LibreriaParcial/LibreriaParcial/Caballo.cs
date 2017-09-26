@@ -6,54 +6,52 @@ using System.Threading.Tasks;
 
 namespace LibreriaParcial
 {
-    class Perro:Animal
+    class Caballo:Animal
     {
         protected static int patas;
-        protected ERazas raza;
+        protected string nombre;
 
         #region Constructores
-        static Perro()
+        static Caballo()
         {
             patas = 4;
         }
 
-        Perro(int velocidadMaxima) : base(patas,velocidadMaxima) { }
-
-        public Perro(ERazas raza, int velocidadMaxima):base(patas,velocidadMaxima) 
+        public Caballo(string nombre, int velocidadMaxima) : base(patas, velocidadMaxima)
         {
-            this.raza = raza;
+            this.nombre = nombre;
         }
         #endregion
 
         #region Metodos
-        public string MostrarPerro() 
+        public string MostrarCaballo()
         {
-            string returnAux;
             string aux = MostrarDatos();
-            returnAux = string.Concat("Raza: {0}, Patas: {1}, {2}", this.raza, this.CantidadPatas, aux);
-            return returnAux;
+            string resultAux = string.Concat("Nombre: {0}, Patas: {1}, {2}",this.nombre,patas, aux);
+            return resultAux;
         }
 
-        public static bool operator ==(Perro p1, Perro p2)
+        public static bool operator ==(Caballo c1, Caballo c2)
         {
             bool returnAux = false;
-            if (p1.raza == p2.raza && p1.velocidadMaxima == p2.velocidadMaxima)
+            if (c1.nombre == c2.nombre)
             {
                 returnAux = true;
             }
             return returnAux;
         }
 
-        public static bool operator !=(Perro p1, Perro p2)
+        public static bool operator !=(Caballo c1, Caballo c2)
         {
             bool returnAux = true;
-            if (p1==p2)
+            if (c1 == c2)
             {
                 returnAux = false;
             }
-
             return returnAux;
         }
         #endregion
+
+
     }
 }
