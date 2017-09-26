@@ -113,8 +113,25 @@ namespace LibreriaClases
         /// Preguntar como puedo acceder a los atributos protegidos de los vehiculos
         public static int OrdenarVehiculosPorPatente(Vehiculo v1, Vehiculo v2) 
         {
-            
+            int returnAux;
+
+            if (v1.Patente == v2.Patente) 
+            {
+                returnAux = 0;
+            }
+            else if (string.Compare(v1.Patente,v2.Patente)==1)
+            {
+                returnAux = 1;
+            }
+            else 
+            {
+                returnAux = -1;
+            }
+
+            return returnAux;
+           // Lavadero._vehiculos.sort();
         }
+        
 	
     }
 }

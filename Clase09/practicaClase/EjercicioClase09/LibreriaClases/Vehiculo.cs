@@ -12,6 +12,14 @@ namespace LibreriaClases
         protected byte _cantRuedas;
         protected EMarca _marca;
 
+        
+
+        public string Patente
+        {
+            get { return _patente; }
+        }
+        
+
         public Vehiculo(string patente, byte ruedas, EMarca marca) 
         {
             this._cantRuedas = ruedas;
@@ -34,5 +42,7 @@ namespace LibreriaClases
             }
             return returnAux;
         }
+
+
     }
 }
