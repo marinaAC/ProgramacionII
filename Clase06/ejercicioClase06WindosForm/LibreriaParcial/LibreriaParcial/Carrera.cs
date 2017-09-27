@@ -75,26 +75,38 @@ namespace LibreriaParcial
             return returnAux;
         }
 
-        /** Preguntar
+        
         public static Carrera operator +(Carrera c, Animal a)
         {
+            Carrera carreraN = new Carrera();
             if (c != a && c.corredoresMax > 0)
             {
-                c.animales.Add(a);
+                carreraN.animales = c.animales;
+                carreraN.animales.Add(a);
             }
+            return carreraN;
         }
-         * 
+         /* 
          * Retorno una nueva carrera, ya que lo que hago es una nueva carrera con una nueva lista
-        
+        */
         public string MostarCarrera(Carrera c)
         {
             //c.animales.Count
             //stringbuilder, consola -> tostring
-           /* string resultAux;
-            resultAux = mostrarDatos();
-            return resultAux;
+            //chequear
+            StringBuilder listaMostrar = new StringBuilder();
+            int i;
+            for (i = 0; i < c.animales.Count;i++ )
+            {
+                if (c.animales[i] is Humano) 
+                {
+                    listaMostrar.AppendFormat("{0}",c.animales[i].MostrarDatos());
+                }
+            }
+            
+            return i;
         }
-        */
+        
         #endregion
 
         
