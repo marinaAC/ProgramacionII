@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaGuia
 {
-    class Llamada
+    public class Llamada
     {
         public enum TipoLlamada { Local, Provincial, Todas }
         protected float duracion;
