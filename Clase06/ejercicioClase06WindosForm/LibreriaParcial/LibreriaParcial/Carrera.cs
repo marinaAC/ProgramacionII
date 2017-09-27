@@ -83,10 +83,14 @@ namespace LibreriaParcial
                 c.animales.Add(a);
             }
         }
+         * 
+         * Retorno una nueva carrera, ya que lo que hago es una nueva carrera con una nueva lista
         
         public string MostarCarrera(Carrera c)
         {
-            string resultAux;
+            //c.animales.Count
+            //stringbuilder, consola -> tostring
+           /* string resultAux;
             resultAux = mostrarDatos();
             return resultAux;
         }
