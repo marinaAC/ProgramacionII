@@ -99,14 +99,29 @@ namespace LibreriaGuia
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Ganancia Total ${0:N} ", this.GananciaPorTotal);
+            
             sb.AppendFormat("Ganancia Local ${0:N} ", this.GananciaPorLocal);
+            sb.AppendLine();
             sb.AppendFormat("Ganancia Provincial ${0:N}", this.GananciaPorProvincial);
+            sb.AppendLine();
+            sb.AppendFormat("Ganancia Total ${0:N} ", this.GananciaPorTotal);
             sb.AppendLine();
 
             return sb.ToString();
         }
 
+        /*
+        public void OrdernarLlamada() 
+        {
+            int i;
+            for (i = 0; i < this.listaLlamadas.Count;i++ )
+            {
+                Llamada l1 = this.listaLlamadas[i];
+                Llamada l2 = this.listaLlamadas[i + 1];
+                listaLlamadas.Sort(Llamada.OrdernarPorDuracion(l1, l2));
+            }
+        }
+        */
 
         #endregion 
 
