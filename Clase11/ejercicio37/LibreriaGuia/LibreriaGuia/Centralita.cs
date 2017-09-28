@@ -71,15 +71,15 @@ namespace LibreriaGuia
             foreach (Llamada element in this.listaLlamadas)
             {
 
-                if (element is Local)
+                if (element is Local && tipoLlamada == Llamada.TipoLlamada.Local)
                 {
                     returnAux += ((Local)element).CostoLlamada;
                 }
-                else if (element is Provincial)
+                else if (element is Provincial && tipoLlamada == Llamada.TipoLlamada.Provincial)
                 {
                     returnAux += ((Provincial)element).CostoLlamada;
                 }
-                else
+                else if (tipoLlamada == Llamada.TipoLlamada.Todas)
                 {
                     if (element is Local)
                     {
@@ -99,8 +99,8 @@ namespace LibreriaGuia
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Ganancia Total ${0:N}", this.GananciaPorTotal);
-            sb.AppendFormat("Ganancia Local ${0:N}", this.GananciaPorLocal);
+            sb.AppendFormat("Ganancia Total ${0:N} ", this.GananciaPorTotal);
+            sb.AppendFormat("Ganancia Local ${0:N} ", this.GananciaPorLocal);
             sb.AppendFormat("Ganancia Provincial ${0:N}", this.GananciaPorProvincial);
             sb.AppendLine();
 
