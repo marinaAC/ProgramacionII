@@ -34,6 +34,16 @@ namespace LibreriaClases
             return returnAux;
         }
 
+        public static bool operator !=(Empleado e1, Empleado e2)
+        {
+            bool returnAux = true;
+            if(e1 == e2)
+            {
+                returnAux = false;
+            }
+            return returnAux;
+        }
+
         public string MostrarEmpleado() 
         {
             string returnAux = string.Format("Nombre: {0} Apellido {1} Legajo {2}", this._nombre, this._apellido, this._legajo);

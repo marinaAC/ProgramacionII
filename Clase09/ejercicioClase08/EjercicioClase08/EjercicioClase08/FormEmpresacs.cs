@@ -31,7 +31,21 @@ namespace EjercicioClase08
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            float ganancias = float.Parse(this.mtxtGanacias.Text.Replace(".", ",").Substring(1, mtxtGanacias.Text.Length - 1));
+            if (this._empresa == null)
+            {
+                this._empresa = new Empresa(this.txtRazonSocial.Text, this.txtDireccion.Text, ganancias);
+            }
+            else 
+            {
+                this._empresa.RazonSocial = this.txtRazonSocial.Text;
+                this._empresa.Direccion = this.txtDireccion.Text;
+                this._empresa.Ganancias = ganancias;
+            }
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Close();
 
+            
         }
     }
 }
