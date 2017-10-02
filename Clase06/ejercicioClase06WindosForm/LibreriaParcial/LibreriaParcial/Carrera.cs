@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaParcial
 {
-    class Carrera
+    public class Carrera
     {
         protected List<Animal> animales;
         protected int corredoresMax;
@@ -79,9 +79,9 @@ namespace LibreriaParcial
         public static Carrera operator +(Carrera c, Animal a)
         {
             Carrera carreraN = new Carrera();
-            if (c != a && c.corredoresMax > 0)
+            if (c != a && c.corredoresMax >= 0)
             {
-                carreraN.animales = c.animales;
+                carreraN = c;
                 carreraN.animales.Add(a);
             }
             return carreraN;
@@ -101,10 +101,11 @@ namespace LibreriaParcial
                 if (c.animales[i] is Humano) 
                 {
                     listaMostrar.AppendFormat("{0}",c.animales[i].MostrarDatos());
+                    listaMostrar.AppendLine();
                 }
             }
             
-            return i;
+            return listaMostrar.ToString();
         }
         
         #endregion

@@ -11,15 +11,15 @@ namespace PracticaParcial
         public enum TipoManada { UNICA , MIXTA }
         protected string nombre;
         protected List<Mascota> listaMascota;
-        protected TipoManada tipo;
+        protected static TipoManada tipo;
 
         #region Constructores
-        /*Preguntar como es el constructor de clase
+        
         public static Grupo() 
         {
-            this.tipo = TipoManada.UNICA;
+            Grupo.Tipo = TipoManada.UNICA;
         }
-        */
+        
         private Grupo()
         {
             this.listaMascota = new List<Mascota>();
@@ -33,17 +33,17 @@ namespace PracticaParcial
 
         public Grupo(string nombre, TipoManada tipo): this(nombre) 
         {
-            this.tipo = tipo;
+            Grupo.Tipo = tipo;
         }
         #endregion
 
 
         #region Propiedades
-        public TipoManada Tipo
+        public static TipoManada Tipo
         {
             set 
             { 
-                this.tipo = value; 
+                Grupo.tipo = value; 
             }
         }
         #endregion

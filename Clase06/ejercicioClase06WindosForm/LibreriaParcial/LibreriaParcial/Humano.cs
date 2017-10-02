@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaParcial
 {
-    class Humano:Animal
+    public class Humano:Animal
     {
         protected string nombre;
         protected string apellido;

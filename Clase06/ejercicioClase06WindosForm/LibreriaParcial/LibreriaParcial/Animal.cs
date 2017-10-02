@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaParcial
 {
-    abstract class Animal
+    public abstract class Animal
     {
         protected int cantidadPatas;
         protected Random distanciaRecorrida;
@@ -81,7 +81,7 @@ namespace LibreriaParcial
         public string MostrarDatos()
         {
             string resultAux;
-            resultAux = string.Concat("Cantidad de Patas: {0}, Velocidad: {1}, Distancia Recorrida: {2}", this.cantidadPatas,this.velocidadMaxima,this.distanciaRecorrida);
+            resultAux = string.Format("Cantidad de Patas: {0}, Velocidad: {1}, Distancia Recorrida: {2}", this.CantidadPatas,this.VelocidadMaxima,this.DistanciaRecorrida);
             return resultAux;
         }
         #endregion

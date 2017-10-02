@@ -17,11 +17,7 @@ namespace ejercicio38
         public override bool Equals(object obj)
         {
             bool returnAux = false;
-            if(obj.GetType() != typeof(Sobreescrito))
-            {
-                returnAux = false;
-            }
-            if (ReferenceEquals(this, obj))
+            if(obj.GetType() == this.GetType())
             {
                 returnAux = true;
             }

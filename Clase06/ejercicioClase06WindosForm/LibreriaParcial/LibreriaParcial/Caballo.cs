@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaParcial
 {
-    class Caballo:Animal
+    public class Caballo:Animal
     {
         protected static int patas;
         protected string nombre;
@@ -26,8 +26,8 @@ namespace LibreriaParcial
         #region Metodos
         public string MostrarCaballo()
         {
-            string aux = MostrarDatos();
-            string resultAux = string.Concat("Nombre: {0}, Patas: {1}, {2}",this.nombre,patas, aux);
+            string aux = base.MostrarDatos();
+            string resultAux = string.Format("Nombre: {0}, Patas: {1}, {2}",this.nombre,patas, aux);
             return resultAux;
         }
 
