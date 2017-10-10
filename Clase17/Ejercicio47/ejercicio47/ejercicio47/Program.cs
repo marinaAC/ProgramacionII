@@ -17,9 +17,9 @@ namespace ejercicio47
             Recibo rec = new Recibo(50);
 
             cont = cont + fac1;
-            /*
-            Console.WriteLine("{0}", );
-            Console.ReadLine();*/
+            
+            Console.WriteLine("{0}", cont.CantidadT);
+            Console.ReadLine();
         }
     }
 }

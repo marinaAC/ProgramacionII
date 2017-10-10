@@ -10,8 +10,26 @@ namespace ClassLibrary
         where T : Documento
         where U : new()
     {
-        private List<T> egresos;
-        private List<U> ingresos;
+        private List<T> egresos = new List<T>();
+        private List<U> ingresos = new List<U>();
+
+        public int CantidadT 
+        {
+            get 
+            {
+                return egresos.Count();
+            }
+        }
+
+        public int CantidadU
+        {
+            get 
+            {
+                return ingresos.Count();
+            }
+        }
+
+
 
         public static Contabilidad<T,U> operator +(Contabilidad<T,U> c, T egreso)
         {
