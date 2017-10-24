@@ -8,5 +8,6 @@ namespace IO
 {
     public abstract class Archivo    
     {
+
     }
 }
