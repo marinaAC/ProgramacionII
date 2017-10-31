@@ -1,0 +1,26 @@
+Querys 
+
+Ejemplo en clase-----------------------
+select * from dbo.Localidad L 
+inner join dbo.Provincia P
+on L.idProvincia = p.id
+where p.descripcion = 'Buenos Aires';
+---------------------------------------
+
+select Nombre, descripcion from dbo.Localidad L 
+join dbo.Provincia P
+on L.idProvincia = p.id
+where p.descripcion = 'Buenos Aires';
+
+----------------Para contar
+select COUNT(Nombre) from dbo.Localidad l
+join Provincia p 
+on l.idProvincia = p.id
+where p.descripcion = 'Buenos Aires';
+
+
+-------------------------
+select count(descripcion)Cantidad from Provincia p
+join Localidad l
+on l.idProvincia = p.id
+group by p.descripcion;
