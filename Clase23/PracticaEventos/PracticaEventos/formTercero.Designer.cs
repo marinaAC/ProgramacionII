@@ -48,6 +48,7 @@
             this.Controls.Add(this.lblActualizar);
             this.Name = "formTercero";
             this.Text = "Mostrar";
+            this.Load += new System.EventHandler(this.formTercero_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

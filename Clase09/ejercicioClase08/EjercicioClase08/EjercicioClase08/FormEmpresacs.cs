@@ -44,7 +44,6 @@ namespace EjercicioClase08
             }
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
-
             
         }
     }

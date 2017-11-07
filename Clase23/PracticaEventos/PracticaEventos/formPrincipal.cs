@@ -12,7 +12,8 @@ namespace PracticaEventos
 {
     public partial class formPrincipal : Form
     {
-        
+      
+
         public formPrincipal()
         {
             InitializeComponent();
@@ -37,10 +38,19 @@ namespace PracticaEventos
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
-            Form formEventListener = new formTercero();
-            formEventListener.MdiParent = this;
-            formEventListener.Show();
+            foreach (Form item in this.MdiChildren) 
+            {
+                if(item is formSec)
+                {
+                    this.IsMdiContainer = true;
+                    Form formEventListener = new formTercero();
+                    formEventListener.MdiParent = this;
+                    ((formTercero)item).actualizaLbl += formTercero.ActualizarNombre;
+                    formEventListener.Show();
+                }
+            }
         }
+
+
     }
 }
