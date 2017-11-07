@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClassLibrary;
 
 namespace PracticaEventos
 {
@@ -45,7 +46,9 @@ namespace PracticaEventos
                     this.IsMdiContainer = true;
                     Form formEventListener = new formTercero();
                     formEventListener.MdiParent = this;
-                    ((formTercero)item).actualizaLbl += formTercero.ActualizarNombre;
+                    Eventos miEvento = new Eventos();
+                   
+                    miEvento.actualizoLbl += formSec.ActualizarNombre;
                     formEventListener.Show();
                 }
             }
