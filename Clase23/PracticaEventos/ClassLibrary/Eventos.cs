@@ -14,6 +14,7 @@ namespace ClassLibrary
 
         public void EventoActualizarNombre(string nombre) 
         {
+            //cuando sucede
             actualizoLbl.Invoke(nombre);
         }
 

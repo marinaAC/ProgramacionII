@@ -44,11 +44,12 @@ namespace PracticaEventos
                 if(item is formSec)
                 {
                     this.IsMdiContainer = true;
-                    Form formEventListener = new formTercero();
+                    formTercero formEventListener = new formTercero();
                     formEventListener.MdiParent = this;
-                    Eventos miEvento = new Eventos();
-                   
-                    miEvento.actualizoLbl += formSec.ActualizarNombre;
+                    //Parseo el item recibido, ya que en el formulario 2 se encuentra el evento
+                    //con el delegado declarado, entonces realizo el metodo actualizar nombre
+                    //realmente no entiendo bien como funciona aun
+                    ((formSec)item).actualizoLbl += formEventListener.ActualizarNombre;
                     formEventListener.Show();
                 }
             }

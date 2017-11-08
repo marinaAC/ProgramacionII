@@ -23,6 +23,10 @@ namespace PracticaEventos
 
         }
 
+        /// <summary>
+        /// Delegado donde voy a tomar del evento invocado y enviado
+        /// </summary>
+        /// <param name="nombre"></param>
         public void ActualizarNombre(string nombre) 
         {
             this.lblActualizar.Text = nombre;

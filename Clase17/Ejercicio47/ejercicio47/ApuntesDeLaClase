@@ -1,0 +1,12 @@
+metodo de extension - para clases selladas------no necesariamente
+					es para la creacion de un objeto nuevo(metodos), a traves de un namespace
+					solo instancia se utiliza (tipo nativo, cuando pones punto)
+					
+					
+					tanto la clase como el metodo es estatico, se declara como estatico pero se utiliza de instancia
+					
+					Valido para clases e interfaces
+					
+					namespace metodoE
+						public static class miEx
+							public static int Metodo(this [tipo][nombre])

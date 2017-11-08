@@ -13,7 +13,10 @@ namespace PracticaEventos
 {
     public partial class formSec : Form
     {
-        
+        public delegate void ActualizarNombre(string nombre);
+
+        public event ActualizarNombre actualizoLbl;
+
         public formSec()
         {
             InitializeComponent();
@@ -24,10 +27,11 @@ namespace PracticaEventos
            
         }
 
+        //Aviso donde voy a invocar mi evento
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            Eventos myEvento = new Eventos();
-            myEvento.EventoActualizarNombre(this.txtDelegado.Text);
+            
+            actualizoLbl(this.txtDelegado.Text);
         }
 
 
