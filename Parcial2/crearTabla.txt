@@ -1,0 +1,12 @@
+USE [Carrera]
+GO
+/****** Object:  Table [dbo].[Carrera]    Script Date: 11/21/2017 17:52:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Carrera](
+	[id] [numeric](18, 0) NOT NULL,
+	[hora] [nchar](10) NOT NULL
+) ON [PRIMARY]
+GO
