@@ -24,16 +24,20 @@ namespace PractFinal2017
             InitializeComponent();
             this.medicoGeneral = new MGeneral("Luis", "Salinas");
             this.medicoEspecialista = new MEspecialista("Jorge", "Iglesias", MEspecialista.Especialidad.Traumatologo);
+            medicoEspecialista.FinAtencionPaciente += FinAtencion;
+            medicoGeneral.FinAtencionPaciente += FinAtencion;
         }
 
         private void btnAtenderMedicoGeneral_Click(object sender, EventArgs e)
         {
             AtenderPacientes(this.medicoGeneral);
+
         }
 
         private void btnAtenderMedicoEspecialista_Click(object sender, EventArgs e)
         {
             AtenderPacientes(this.medicoEspecialista);
+            
         }
 
         private void frmFinal_Load(object sender, EventArgs e)
@@ -65,16 +69,14 @@ namespace PractFinal2017
             //se agregan pacientes cola de espera
         }
 
-        private void AtenderPacientes(IMedico medico) 
+        private void AtenderPacientes(IMedico iMedico) 
         {
             int cantidad = pacientesEnEspera.Count();
-            if (cantidad > 0) 
-            {
-                foreach(Paciente p in pacientesEnEspera)
+              if (cantidad > 0)
                 {
-                    medico.IniciarAtencionPaciente(p);
+                    iMedico.IniciarAtencionPaciente(this.pacientesEnEspera.Dequeue());
                 }
-            }
+            
             //llamado en los clicks
 
         }
