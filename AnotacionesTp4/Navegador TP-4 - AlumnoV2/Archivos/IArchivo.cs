@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace Archivos
 {
-    public interface IRespuesta<T>
+    public interface IArchivo<T>
     {
-        void RespuestaHilo(T id);
+        bool guardar(T datos);
+        bool leer(out List<T> datos);
     }
 }

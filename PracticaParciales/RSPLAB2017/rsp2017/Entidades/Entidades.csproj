@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="InfoHilos.cs" />
     <Compile Include="IRespuesta.cs" />
+    <Compile Include="IRespuesta_2.cs" />
     <Compile Include="LosHilos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

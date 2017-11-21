@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public interface IRespuesta<T>
+    public interface IMedico
     {
-        void RespuestaHilo(T id);
+        void IniciarAtencionPaciente(Paciente p);
     }
 }

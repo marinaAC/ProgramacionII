@@ -61,6 +61,7 @@
             this.Controls.Add(this.btnLanzar);
             this.Name = "frmPrincipal";
             this.Text = "Segundo Parcial";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
 
         }
