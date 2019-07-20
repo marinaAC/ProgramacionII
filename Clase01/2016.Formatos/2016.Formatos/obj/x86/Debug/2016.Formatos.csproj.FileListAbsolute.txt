@@ -12,3 +12,5 @@ C:\Users\alumno\Desktop\clase01\2016.Formatos\2016.Formatos\obj\x86\Debug\2016.F
 C:\Users\alumno\Desktop\clase01\2016.Formatos\2016.Formatos\bin\Debug\2016.Formatos.exe
 C:\Users\alumno\Desktop\clase01\2016.Formatos\2016.Formatos\bin\Debug\2016.Formatos.pdb
 C:\Users\alumno\Desktop\clase01\2016.Formatos\2016.Formatos\obj\x86\Debug\2016.Formatos.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\UTN\Programacion-LaboratorioII\ProgramacionII\Clase01\2016.Formatos\2016.Formatos\obj\x86\Debug\2016.Formatos.exe
+C:\Users\Administrador\Documents\UTN\Programacion-LaboratorioII\ProgramacionII\Clase01\2016.Formatos\2016.Formatos\obj\x86\Debug\2016.Formatos.pdb
