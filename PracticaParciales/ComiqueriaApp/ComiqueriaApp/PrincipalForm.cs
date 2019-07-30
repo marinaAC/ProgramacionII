@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-
 namespace ComiqueriaApp
 {
     public partial class PrincipalForm : Form
@@ -83,7 +82,7 @@ namespace ComiqueriaApp
             //Si el constructor tiene parámetros de entrada proporcionarle los argumentos que correspondan.
             //El campo "productoSeleccionado" contiene el producto actualmente seleccionado en el listBox de productos. 
             //El campo "comiqueria" contiene la instancia de la comiqueria que se está utilizando. 
-            Form ventasForm = new VentasForm(); 
+            Form ventasForm = new VentasForm(this.comiqueria,productoSeleccionado); 
             DialogResult result = ventasForm.ShowDialog(); //Agregar código para abrir ventasForm de forma MODAL
             if (result == DialogResult.OK)
             {

@@ -1,68 +1,71 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ComiqueriaLogic
 {
     public abstract class Producto
     {
-        #region atributos
         private Guid codigo;
         private string descripcion;
         private double precio;
         private int stock;
-        #endregion
 
         #region Propiedades
+
         public string Descripcion
         {
             get { return this.descripcion; }
         }
+
         public double Precio
         {
-            get { return this.precio; }
+            get{ return this.precio; }
         }
+
         public int Stock
         {
-            get
-            {
+            get {
                 return this.stock;
             }
-            set
-            {
-                if (value >= 0)
+            set {
+                if (value > 0) {
                     this.stock = value;
+                }
             }
         }
         #endregion
 
-        protected Producto(string descripcion, int stock, double precio)
-        {
-            this.descripcion = descripcion;
+        #region Constructores
+        protected Producto(string descripcion, int stock, double precio) {
             this.stock = stock;
+            this.descripcion = descripcion;
             this.precio = precio;
             this.codigo = Guid.NewGuid();
         }
+        #endregion
 
+        #region Metodos
+        /// <summary>
+        /// sobre escitura de Guid, retorna el codigo de un producto
+        /// </summary>
+        /// <param name="p">Producto</param>
+        public static explicit operator Guid(Producto p){
+            return p.codigo;
+        }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("Descripcion: {0}", this.descripcion);
-            sb.AppendLine();
-            sb.AppendFormat("Codigo: {0}", this.codigo);
-            sb.AppendLine();
-            sb.AppendFormat("Precio: {0}", this.precio);
-            sb.AppendLine();
-            sb.AppendFormat("Stock: {0}", this.stock);
+            sb.AppendLine(String.Format("Descripción: {0}", this.descripcion));
+            sb.AppendLine(String.Format("Código: {0}", this.codigo));
+            sb.AppendLine(String.Format("Precio: ${0:0.00}", this.precio));
+            sb.AppendLine(String.Format("Stock: {0} unidades", this.stock));
             return sb.ToString();
         }
-
-        public static explicit operator Guid(Producto p)
-        {
-            return p.codigo;
-        }
-
-
+        #endregion
 
 
     }

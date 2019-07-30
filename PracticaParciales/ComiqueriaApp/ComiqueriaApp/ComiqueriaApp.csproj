@@ -74,6 +74,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VentasForm.resx">
+      <DependentUpon>VentasForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ComiqueriaLogic\ComiqueriaLogic.csproj">
-      <Project>{30f22209-82dc-4a75-8657-89d99cd17c94}</Project>
+      <Project>{86ebdc4d-ef7f-487f-a3cd-8bd51546c858}</Project>
       <Name>ComiqueriaLogic</Name>
     </ProjectReference>
   </ItemGroup>

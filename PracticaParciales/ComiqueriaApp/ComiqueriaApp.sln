@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComiqueriaApp", "ComiqueriaApp\ComiqueriaApp.csproj", "{EE473F46-6A42-4285-ACE9-D77CED9F0B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComiqueriaLogic", "ComiqueriaLogic\ComiqueriaLogic.csproj", "{30F22209-82DC-4A75-8657-89D99CD17C94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComiqueriaLogic", "ComiqueriaLogic\ComiqueriaLogic.csproj", "{86EBDC4D-EF7F-487F-A3CD-8BD51546C858}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{EE473F46-6A42-4285-ACE9-D77CED9F0B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE473F46-6A42-4285-ACE9-D77CED9F0B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE473F46-6A42-4285-ACE9-D77CED9F0B95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{30F22209-82DC-4A75-8657-89D99CD17C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30F22209-82DC-4A75-8657-89D99CD17C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30F22209-82DC-4A75-8657-89D99CD17C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30F22209-82DC-4A75-8657-89D99CD17C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EBDC4D-EF7F-487F-A3CD-8BD51546C858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EBDC4D-EF7F-487F-A3CD-8BD51546C858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EBDC4D-EF7F-487F-A3CD-8BD51546C858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EBDC4D-EF7F-487F-A3CD-8BD51546C858}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
