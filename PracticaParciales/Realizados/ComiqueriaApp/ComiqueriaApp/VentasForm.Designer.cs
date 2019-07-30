@@ -42,7 +42,7 @@
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescripcion.Location = new System.Drawing.Point(51, 49);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(8, 8);
+            this.lblDescripcion.Size = new System.Drawing.Size(269, 21);
             this.lblDescripcion.TabIndex = 0;
             this.lblDescripcion.Text = "label1";
             // 

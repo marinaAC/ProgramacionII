@@ -38,25 +38,24 @@ namespace ComiqueriaLogic
         #region Metodos
         public static bool operator ==(Comiqueria comiqueria,Producto producto) {
             bool equals = false;
-            if (!object.ReferenceEquals(null,comiqueria)&&!object.ReferenceEquals(null,producto)) {
+           
                 foreach (Producto p in comiqueria.productos) {
                     if (p.Descripcion == producto.Descripcion) {
                         equals = true;
                     }
                 }
 
-            }
 
             return equals;
         }
 
         public static bool operator !=(Comiqueria comiqueria,Producto producto) {
-            bool equals = (comiqueria == producto);
+            bool equals = !(comiqueria == producto);
             return equals;
         }
 
         public static Comiqueria operator +(Comiqueria comiqueria,Producto producto) {
-            if (comiqueria == producto) {
+            if (comiqueria != producto) {
                 comiqueria.productos.Add(producto);
             }
             return comiqueria;
