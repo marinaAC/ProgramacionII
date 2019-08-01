@@ -31,6 +31,7 @@ namespace _20171123_SP_Cartas
         {
             if (this.InvokeRequired)
             {
+                //vinculacion
                 Paquete.DelegadoEstado d = new Paquete.DelegadoEstado(paq_InformaEstado);
                 this.Invoke(d, new object[] { sender, e });
             }
